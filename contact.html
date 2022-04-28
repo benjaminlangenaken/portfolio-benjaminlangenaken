@@ -11,14 +11,20 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans&display=swap"
 		  rel="stylesheet">
+	<link rel="stylesheet" href="./styles/style.css">
 	<link rel="stylesheet" href="./styles/header-footer.css">
 	<link rel="stylesheet" href="./styles/contact.css">
 </head>
 
 <body>
+
 <header>
 	<div class="header-container">
-		<a href="./index.html" class="header-name">My Portfolio</a>
+		<a href="./projects.html" class="header-name">
+			<img src="./images/portfolio.png" class="portfolio-icon" alt="portfolio">
+		</a>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle">
+		<label for="nav-toggle"><img src="./images/hamburger.png" class="hamburger-icon" alt="hamburger"></label>
 		<nav class="main-container">
 			<ul class="home-contact">
 				<li>
@@ -28,12 +34,12 @@
 					<a class="nav-buttons" href=./projects.html>Projects</a>
 				</li>
 				<li>
-					<a class="nav-buttons" href=./contact.html>Contact</a>
+					<a class="nav-buttons" href=./about.html>About Me</a>
 				</li>
 			</ul>
 			<ul class="mail">
 				<li>
-					<button class="button-mail"><a class="href-mail" href=./mail.html>Get in touch!</a></button>
+					<button class="button-mail"><a class="href-mail" href=./contact.html>Get in touch!</a></button>
 				</li>
 			</ul>
 		</nav>
@@ -46,7 +52,7 @@
 		<h1>Get in touch</h1>
 		<div class="contact-container">
 			<div class="contact-item">
-				<img src="./images/pin.png" class="pin" alt="Pin">
+				<img src="./images/pin.png" class="icons" alt="Pin">
 				<div class="address-container">
 					<h2>Address</h2>
 					<address>
@@ -56,7 +62,7 @@
 				</div>
 			</div>
 			<div class="contact-item">
-				<img src="./images/phone.png" class="phone" alt="Phone">
+				<img src="./images/phone.png" class="icons" alt="Phone">
 				<div class="address-container">
 					<h2>Phone</h2>
 					<address>
