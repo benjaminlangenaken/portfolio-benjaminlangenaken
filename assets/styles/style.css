@@ -67,6 +67,12 @@ body {
 	padding: 0.8rem 0;
 }
 
+.href-contact {
+	color: #3d405b;
+	font-weight: 700;
+	text-decoration: none;
+}
+
 .title-icon {
 	display: flex;
 	justify-content: space-between;
