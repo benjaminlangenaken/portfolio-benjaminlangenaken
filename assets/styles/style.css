@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f1faee;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2.5rem;
+	max-width: 65rem;
+	margin: auto;
+	background-color: #81b29a;
+	border-radius: 15px;
+	box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
+}
+
+.hero-img {
+	height: 30rem;
+	width: 30rem;
+	border-radius: 15px 0 0 15px;
+}
+
+.bio {
+	width: 25rem;
+	padding: 0.625rem;
+	font-family: 'Open Sans', sans-serif;
+	color: #3d405b;
+	background-color: #f1faee;
+	border-radius: 5px 0 0 5px;
+	box-shadow: rgba(61, 64, 91, 0.76) 0 3px 6px;
+}
+
+.bio h2 {
+	margin-left: 0.5rem;
+}
+
+.bio p {
+	line-height: 2rem;
+	margin-left: 1.5rem;
+	padding: 0.8rem 0;
+}
+
+.title-icon {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.coffee-icon {
+	width: 64px;
+	height: 64px;
+	margin-right: 0.5rem;
+}
