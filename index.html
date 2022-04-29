@@ -24,7 +24,7 @@
 
 <header>
 	<div class="header-container">
-		<a href="./about.html" class="header-name">
+		<a href="#about" class="header-name">
 			<h1 class="name">Benjamin Langenaken</h1>
 		</a>
 
@@ -33,13 +33,13 @@
 		<nav class="main-container">
 			<ul class="home-contact">
 				<li>
-					<a class="nav-buttons" href="./about.html">About Me</a>
+					<a class="nav-buttons" href="#about">About Me</a>
 				</li>
 				<li>
-					<a class="nav-buttons" href=./skills.html>Skills</a>
+					<a class="nav-buttons" href="#skills">Skills</a>
 				</li>
 				<li>
-					<a class="nav-buttons" href=./projects.html>Projects</a>
+					<a class="nav-buttons" href="#projects">Projects</a>
 				</li>
 			</ul>
 			<ul class="mail">
@@ -52,34 +52,65 @@
 	<hr>
 </header>
 
-<section class="hero" id="about">
-	<img
-			src="assets/images/picture.jpg"
-			alt="benjamin-langenaken"
-			loading="lazy"
-			class="hero-img"
-	/>
-	<div class="bio animate__animated animate__shakeX">
-		<div class="title-icon">
-			<h2 class="bio-title">Hi there!</h2>
-			<img src="./assets/images/coffee.png" class="coffee-icon" alt="coffee">
-		</div>
-		<p class="bio-text">
-			Glad you stumbled across my website...
-			<br>
-			Feel like having a digital cup of coffee?
-			<br>
-			Get in touch, and we'll have a talk!
-		</p>
-	</div>
-</section>
+<div class="page-container">
+	<div class="content-wrap">
+		<section class="hero" id="about">
+			<img
+					src="assets/images/picture.jpg"
+					alt="benjamin-langenaken"
+					loading="lazy"
+					class="hero-img"
+			/>
+			<div class="bio">
+				<div class="title-icon">
+					<h2 class="bio-title">Hi there!</h2>
+					<img src="./assets/images/coffee.png" class="coffee-icon" alt="coffee">
+				</div>
+				<p class="bio-text">
+					Glad you stumbled across my website...
+					<br>
+					Feel like having a digital cup of coffee?
+					<br>
+					Get in touch, and we'll have a talk!
+				</p>
+			</div>
+		</section>
 
-<footer>
-	<div class="footer-container">
-		<span class="footer-span">Benjamin Langenaken</span>
-		<span class="footer-span">Junior Full Stack Web Developer</span>
+		<section class="more-about">
+			<h2>About Me</h2>
+			<p>
+				I’m a coding enthusiast who recently followed a bootcamp at BeCode to become a Junior Full Stack Web Developer.
+				<br>
+				Before I took the dive into coding I was an accountant, which didn’t completely satisfy my creative side. Hence the switch...
+				<br>
+				Thanks to my background as an accountant I have an analytical mind, with a keen eye for detail.
+			</p>
+			<p>
+				My ideal working environment would offer me the freedom to put my creativity to use, aimed at helping others and, last but not least,
+				<br>
+				the possibility to keep honing my skillset.
+			</p>
+		</section>
 	</div>
-</footer>
+
+	<footer>
+		<div class="footer-container">
+			<div class="footer-name-title">
+			<span class="footer-span">Benjamin Langenaken</span>
+			<span class="footer-span">Junior Full Stack Web Developer</span>
+			</div>
+			<div class="footer-social">
+				<a href="https://github.com/benjaminlangenaken" class="github">
+					<img src="./assets/images/github.png" class="social-icons" alt="github">
+				</a>
+				<a href="https://www.linkedin.com/in/benjamin-langenaken-057a667a/" class="linkedin">
+					<img src="./assets/images/linkedin.png" class="social-icons" alt="linkedin">
+
+				</a>
+			</div>
+		</div>
+	</footer>
+</div>
 
 </body>
 </html>
