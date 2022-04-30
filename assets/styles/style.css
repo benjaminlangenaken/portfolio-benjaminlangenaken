@@ -25,7 +25,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgba(61, 64, 91, 0.65);
+	background: rgba(61, 64, 91, 0.75);
 	border: 0.2em solid #3d405b;
 	border-radius: 100vw;
 }
@@ -52,7 +52,7 @@ body {
 	justify-content: space-between;
 	gap: 2.5rem;
 	max-width: 54rem;
-	margin: 4rem 3rem 3rem 3rem;
+	margin: 5rem 0;
 	background-color: #81b29a;
 	border-radius: 15px;
 	box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
@@ -110,7 +110,7 @@ body {
 .more-about {
 	gap: 2.5rem;
 	max-width: 85rem;
-	margin: 3rem;
+	margin-bottom: 5rem;
 	padding: 1rem 6rem;
 	font-family: 'Open Sans', sans-serif;
 	color: #3d405b;
@@ -134,10 +134,11 @@ body {
 #skills {
 	gap: 2.5rem;
 	max-width: 85rem;
-	margin: 1rem 0 6rem 0;
+	margin-bottom: 5rem;
 	font-family: 'Open Sans', sans-serif;
 	color: #3d405b;
 	border-radius: 15px;
+	scroll-margin-top: 7rem;
 }
 
 #skills h2 {
@@ -155,6 +156,71 @@ canvas {
 
 .circles {
 	display: none;
+}
+
+#projects {
+	width: 100rem;
+	height: 80rem;
+	padding: 2rem;
+	color: #3d405b;
+	font-family: 'Open Sans', sans-serif;
+	scroll-margin-top: 7rem;
+}
+
+.projects-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.project-pic {
+	width: 80%;
+	border-radius: 15px;
+	margin-top: 1rem;
+	box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
+}
+
+.projects-title {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.project-container p {
+	padding: 0.8rem;
+}
+
+.project-title {
+	font-size: 22px;
+	margin: 1rem;
+}
+
+.project-details {
+	margin: 1rem;
+}
+
+.project-card {
+	background-color: #f2cc8f;
+	border-radius: 11px;
+	padding: 20px;
+	margin: 10px;
+	box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
+}
+
+.project-card:hover {
+	box-shadow: rgba(61, 64, 91, 0.76) 0 4px 10px;
+}
+
+.project-link {
+	color: #3d405b;
+	font-weight: 700;
+	text-decoration: none;
+	margin: 1rem;
+}
+
+.project-link:hover {
+	color: #f1faee;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -195,10 +261,10 @@ canvas {
 		grid-template-columns: repeat(2, 1fr);
 		align-items: center;
 		justify-items: center;
-		background: #81b29a;
+		padding: 1.5rem;
+		background-color: rgba(61, 64, 91, 0.55);
 		border-radius: 15px;
 		box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
-		padding: 1.5rem;
 	}
 
 	.html-css {
