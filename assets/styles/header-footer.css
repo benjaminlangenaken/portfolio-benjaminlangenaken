@@ -183,6 +183,10 @@ footer {
 		align-items: center;
 	}
 
+	.header-name {
+		width: 4rem;
+	}
+
 	nav {
 		transform: scale(1, 0);
 		transform-origin: top;
