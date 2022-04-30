@@ -91,6 +91,10 @@ body {
 	text-decoration: none;
 }
 
+.href-contact:hover {
+	color: #f2cc8f;
+}
+
 .title-icon {
 	display: flex;
 	justify-content: space-between;
@@ -149,6 +153,10 @@ canvas {
 	box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
 }
 
+.circles {
+	display: none;
+}
+
 @media only screen and (max-width: 1000px) {
 	.hero {
 		flex-direction: column;
@@ -179,7 +187,77 @@ canvas {
 	}
 
 	canvas {
-		width: 28rem;
-		height: 14rem;
+	display: none;
+	}
+
+	.circles {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+		justify-items: center;
+		background: #81b29a;
+		border-radius: 15px;
+		box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
+		padding: 1.5rem;
+	}
+
+	.html-css {
+		width: 12rem;
+		height: 12rem;
+		line-height: 12rem;
+		border-radius: 50%;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: 'Open Sans', sans-serif;
+		color: #3d405b;
+		text-align: center;
+		background: rgba(50,65,230,0.3);
+		border: 1px solid #3d405b;
+		margin: 1rem;
+	}
+
+	.js {
+		width: 10rem;
+		height: 10rem;
+		line-height: 10rem;
+		border-radius: 50%;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: 'Open Sans', sans-serif;
+		color: #3d405b;
+		text-align: center;
+		background: rgba(209,230,50,0.3);
+		border: 1px solid #3d405b;
+		margin: 1rem;
+	}
+
+	.php {
+		width: 8.5rem;
+		height: 8.5rem;
+		line-height: 8.5rem;
+		border-radius: 50%;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: 'Open Sans', sans-serif;
+		color: #3d405b;
+		text-align: center;
+		background: rgba(195,29,29,0.3);
+		border: 1px solid #3d405b;
+		margin: 1rem;
+	}
+
+	.react {
+		width: 7.5rem;
+		height: 7.5rem;
+		line-height: 7.5rem;
+		border-radius: 50%;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: 'Open Sans', sans-serif;
+		color: #3d405b;
+		text-align: center;
+		background: rgba(0,229,255,0.3);
+		border: 1px solid #3d405b;
+		margin: 1rem;
 	}
 }
