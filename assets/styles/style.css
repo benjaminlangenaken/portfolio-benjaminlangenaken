@@ -159,24 +159,30 @@ canvas {
 }
 
 #projects {
-	width: 100rem;
-	height: 80rem;
+	width: 90vw;
 	padding: 2rem;
 	color: #3d405b;
 	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
 	scroll-margin-top: 7rem;
 }
 
 .projects-container {
+	max-width: 100rem;
+	margin-bottom: 10rem;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-content: center;
 	text-align: center;
 	border-radius: 15px;
 }
 
 .project-pic {
-	width: 80%;
+	width: auto;
+	height: 12rem;
 	border-radius: 15px;
 	margin-top: 1rem;
 	box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
@@ -203,8 +209,8 @@ canvas {
 .project-card {
 	background-color: #f2cc8f;
 	border-radius: 11px;
-	padding: 20px;
-	margin: 10px;
+	padding: 0.8rem;
+	margin: 1rem;
 	box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
 }
 
@@ -222,6 +228,13 @@ canvas {
 .project-link:hover {
 	color: #f1faee;
 }
+
+@media only screen and (max-width: 1250px) {
+	.projects-container {
+		flex-wrap: wrap;
+	}
+}
+
 
 @media only screen and (max-width: 1000px) {
 	.hero {
