@@ -21,19 +21,18 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-	background: rgba(61, 64, 91, 0.6);
 	border-radius: 100vw;
 	margin-block: 0.25em;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgba(61, 64, 91, 0.75);
+	background: rgba(61, 64, 91, 0.8);
 	border: 0.2em solid #3d405b;
 	border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: rgba(61, 64, 91, 0.9);
+	background: rgba(61, 64, 91, 0.95);
 }
 
 .page-container {
