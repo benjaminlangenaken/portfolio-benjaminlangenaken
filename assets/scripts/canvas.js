@@ -14,7 +14,7 @@ const scale = window.devicePixelRatio;
 canvas.width = canvasWidth * scale * 10;
 canvas.height = canvasHeight * scale * 10;
 
-c.scale(scale, scale)
+c.scale(scale, scale);
 
 // Create Circle object (OOP)
 class Circle {
@@ -70,13 +70,13 @@ let circleArray = [];
 
 const htmlCss = () => {
 	// Create variable for radius
-	let radius = 80;
+	let radius = 75;
 	// Create variable outside of function for x-axis and y-axis
 	let x = 0.5 * (canvas.width + radius * 2) - radius;
 	let y = 0.5 * (canvas.height + 2 + radius * 2) - radius;
 	// Create variables for velocity
-	let dx = (Math.random()) * 1.5;
-	let dy = (Math.random()) * 1.5;
+	let dx = (Math.random()) * 2;
+	let dy = (Math.random()) * -1.5;
 	// Create variable for color
 	let color = "rgba(50,65,230,0.3)";
 
@@ -93,8 +93,8 @@ const js = () => {
 	let x = 0.3 * (canvas.width + radius * 2) - radius;
 	let y = 0.6 * (canvas.height + 2 + radius * 2) - radius;
 	// Create variables for velocity
-	let dx = (Math.random()) * 1;
-	let dy = (Math.random()) * 1;
+	let dx = (Math.random()) * -1.5;
+	let dy = (Math.random()) * 2;
 	// Create variable for color
 	let color = "rgba(209,230,50,0.3)";
 
@@ -106,13 +106,13 @@ const js = () => {
 
 const laravel = () => {
 	// Create variable for radius
-	let radius = 50;
+	let radius = 55;
 	// Create variable outside of function for x-axis and y-axis
 	let x = 0.6 * (canvas.width + radius * 2) - radius;
 	let y = 0.3 * (canvas.height + 2 + radius * 2) - radius;
 	// Create variables for velocity
 	let dx = (Math.random()) * 2;
-	let dy = (Math.random()) * 2;
+	let dy = (Math.random()) * -2.5;
 	// Create variable for color
 	let color = "rgba(195,29,29,0.3)";
 
@@ -125,13 +125,13 @@ const laravel = () => {
 
 const react = () => {
 	// Create variable for radius
-	let radius = 35;
+	let radius = 45;
 	// Create variable outside of function for x-axis and y-axis
-	let x = 0.8 * (canvas.width + radius * 2) - radius;
-	let y = 0.2 * (canvas.height + 2 + radius * 2) - radius;
+	let x = 0.6 * (canvas.width + radius * 2) - radius;
+	let y = 0.6 * (canvas.height + 2 + radius * 2) - radius;
 	// Create variables for velocity
-	let dx = (Math.random()) * 2.5;
-	let dy = (Math.random()) * 2.5;
+	let dx = (Math.random()) * -2.5;
+	let dy = (Math.random()) * 2;
 	// Create variable for color
 	let color = "rgba(0,229,255,0.3)";
 
