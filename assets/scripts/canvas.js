@@ -4,15 +4,12 @@ const canvas = document.querySelector("canvas");
 const c = canvas.getContext("2d");
 
 // Improve pixel ratio
-const canvasWidth = 60;
-const canvasHeight = 30;
-
-canvas.style.width = canvasWidth + "rem";
-canvas.style.height = canvasHeight + "rem";
+const canvasWidth = 1000;
+const canvasHeight = 500;
 
 const scale = window.devicePixelRatio;
-canvas.width = canvasWidth * scale * 10;
-canvas.height = canvasHeight * scale * 10;
+canvas.width = canvasWidth  * scale;
+canvas.height = canvasHeight  * scale;
 
 c.scale(scale, scale);
 
@@ -32,7 +29,7 @@ class Circle {
 			c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
 			c.strokeStyle = "#3d405b";
 			c.fillStyle = this.color;
-			c.font = "bold 14px Open Sans";
+			c.font = "bold 20px Open Sans";
 			c.textBaseline = "middle";
 			c.textAlign ="center";
 			c.fillText(fillText, this.x, this.y);
@@ -70,7 +67,7 @@ let circleArray = [];
 
 const htmlCss = () => {
 	// Create variable for radius
-	let radius = 75;
+	let radius = 120;
 	// Create variable outside of function for x-axis and y-axis
 	let x = 0.5 * (canvas.width + radius * 2) - radius;
 	let y = 0.5 * (canvas.height + 2 + radius * 2) - radius;
@@ -88,7 +85,7 @@ const htmlCss = () => {
 
 const js = () => {
 	// Create variable for radius
-	let radius = 65;
+	let radius = 100;
 	// Create variable outside of function for x-axis and y-axis
 	let x = 0.3 * (canvas.width + radius * 2) - radius;
 	let y = 0.6 * (canvas.height + 2 + radius * 2) - radius;
@@ -106,7 +103,7 @@ const js = () => {
 
 const laravel = () => {
 	// Create variable for radius
-	let radius = 55;
+	let radius = 80;
 	// Create variable outside of function for x-axis and y-axis
 	let x = 0.6 * (canvas.width + radius * 2) - radius;
 	let y = 0.3 * (canvas.height + 2 + radius * 2) - radius;
@@ -125,7 +122,7 @@ const laravel = () => {
 
 const react = () => {
 	// Create variable for radius
-	let radius = 45;
+	let radius = 60;
 	// Create variable outside of function for x-axis and y-axis
 	let x = 0.6 * (canvas.width + radius * 2) - radius;
 	let y = 0.6 * (canvas.height + 2 + radius * 2) - radius;
