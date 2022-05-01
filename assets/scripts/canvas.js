@@ -122,7 +122,7 @@ const laravel = () => {
 
 const react = () => {
 	// Create variable for radius
-	let radius = 75;
+	let radius = 85;
 	// Create variable outside of function for x-axis and y-axis
 	let x = 0.6 * (canvas.width + radius * 2) - radius;
 	let y = 0.6 * (canvas.height + 2 + radius * 2) - radius;
