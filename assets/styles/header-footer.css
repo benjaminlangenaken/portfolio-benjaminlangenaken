@@ -9,13 +9,13 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 5px 15px;
+	padding: 0 1rem;
 	z-index: 1;
 }
 
 .header-container {
 	height: 100px;
-	padding: 0 20px;
+	padding: 0 1rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -62,9 +62,9 @@ li {
 }
 
 .nav-buttons {
-	width: 100px;
-	margin: 5px;
-	padding: 10px 12px;
+	width: 7rem;
+	margin: 0.2rem;
+	padding: 0.8rem 1rem;
 	color: var(--dark-color);
 	background-color: var(--light-color);
 	font-family: 'Nunito', sans-serif;
@@ -83,12 +83,12 @@ li {
 }
 
 .mail {
-	padding-left: 20px;
+	padding-left: 2rem;
 }
 
 .button-mail {
-	width: 120px;
-	padding: 10px 12px;
+	width: 8.5rem;
+	padding: 0.8rem 1rem;
 	background-color: #81b29a;
 	border: none;
 	border-radius: 25px;
@@ -175,7 +175,7 @@ footer {
 
 	.main-container {
 		background-color: var(--dark-color);
-		padding: 10px;
+		padding: 1rem;
 		border-radius: 10px;
 		position: absolute;
 		flex-direction: column;
@@ -220,7 +220,7 @@ footer {
 		background-color: var(--dark-color);
 		width: auto;
 		margin: 0;
-		padding: 10px 0;
+		padding: 0.5rem 0;
 		font-size: 18px;
 	}
 
