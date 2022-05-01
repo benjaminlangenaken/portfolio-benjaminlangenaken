@@ -94,7 +94,7 @@
 			<p>
 				My ideal working environment would offer me the freedom to put my own creativity to use, aimed at helping others and, last but not least,
 				<br>
-				the possibility to keep honing my skillset.
+				the possibility to keep honing my skill set.
 			</p>
 		</section>
 
@@ -113,7 +113,7 @@
 			<h2 class="projects-title">Recent Projects</h2>
 
 			<div class="projects-container">
-				<div class="project-container project-card">
+				<div class="project-card">
 					<img
 							src="assets/images/weather-app.jpg"
 							alt="weather-app"
@@ -130,7 +130,7 @@
 					</div>
 				</div>
 
-				<div class="project-container project-card">
+				<div class="project-card">
 					<img
 							src="assets/images/budgeting-tool.jpg"
 							alt="budgeting-tool"
@@ -147,7 +147,7 @@
 					</div>
 				</div>
 
-				<div class="project-container project-card">
+				<div class="project-card">
 					<img
 							src="assets/images/todo-app.jpg"
 							alt="weather-app"
@@ -164,7 +164,18 @@
 					</div>
 				</div>
 			</div>
+		</section>
 
+		<section id="contact">
+			<div class="contact-container">
+				<form onsubmit="sendEmail(); reset(); return false;">
+					<h2 class="contact-title">Get in touch!</h2>
+					<input type="text" id="contact-name" placeholder="Your name?" required>
+					<input type="email" id="contact-email" placeholder="Your email address?" required>
+					<textarea id="contact-message" rows="4" placeholder="Add your message here..."></textarea>
+					<button type="submit" class="contact-button">Send!</button>
+				</form>
+			</div>
 		</section>
 
 	</div>
@@ -187,6 +198,9 @@
 		</div>
 	</footer>
 </div>
+
+<script src="assets/scripts/sendEmail.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </body>
 </html>
