@@ -284,6 +284,8 @@ form {
 }
 
 .contact-button {
+	width: 10rem;
+	align-self: center;
 	background-color: #f2cc8f;
 	color: #3d405b;
 	font-family: 'Open Sans', sans-serif;
