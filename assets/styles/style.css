@@ -57,7 +57,7 @@ body {
 	gap: 2.5rem;
 	max-width: 54rem;
 	margin: 5rem 0;
-	background-color: #81b29a;
+	background-color: rgba(129, 178, 154, 0.9);
 	border-radius: 15px;
 	box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
 	scroll-margin-top: 10rem;
@@ -118,7 +118,7 @@ body {
 	padding: 1rem 6rem;
 	font-family: 'Open Sans', sans-serif;
 	color: #3d405b;
-	background-color: #81b29a;
+	background-color: rgba(129, 178, 154, 0.8);
 	border-radius: 15px;
 	box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
 }
@@ -153,7 +153,7 @@ body {
 canvas {
 	width: 60rem;
 	height: 30rem;
-	background-color: rgba(61, 64, 91, 0.55);
+	background-color: rgba(61, 64, 91, 0.75);
 	border-radius: 15px;
 	box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
 }
