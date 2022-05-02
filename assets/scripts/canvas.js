@@ -26,15 +26,17 @@ class Circle {
 
 		this.draw = () => {
 			c.beginPath();
-			c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-			c.strokeStyle = "#3d405b";
 			c.fillStyle = this.color;
+			c.strokeStyle = "rgba(43,45,65,0.9)";
+			c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+			c.fill();
+			c.stroke();
+
 			c.font = "bold 20px Open Sans";
+			c.fillStyle = "rgba(43,45,65,0.9)";
 			c.textBaseline = "middle";
 			c.textAlign ="center";
-			c.fillText(fillText, this.x, this.y);
-			c.stroke();
-			c.fill();
+			c.fillText(this.fillText, this.x, this.y);
 		};
 
 		// Add update function for our Circle object
@@ -75,7 +77,7 @@ const htmlCss = () => {
 	let dx = (Math.random()) * 2;
 	let dy = (Math.random()) * -1.5;
 	// Create variable for color
-	let color = "rgba(50,65,230,0.3)";
+	let color = "rgba(50,65,230,0.4)";
 
 	let fillText = "HTML/CSS";
 
@@ -93,7 +95,7 @@ const js = () => {
 	let dx = (Math.random()) * -1.5;
 	let dy = (Math.random()) * 2;
 	// Create variable for color
-	let color = "rgba(209,230,50,0.3)";
+	let color = "rgba(209,230,50,0.4)";
 
 	let fillText = "JavaScript";
 
@@ -111,8 +113,7 @@ const laravel = () => {
 	let dx = (Math.random()) * 2;
 	let dy = (Math.random()) * -2.5;
 	// Create variable for color
-	let color = "rgba(195,29,29,0.3)";
-
+	let color = "rgba(195,29,29,0.4)";
 
 	let fillText = "PHP/Laravel";
 
@@ -130,7 +131,7 @@ const react = () => {
 	let dx = (Math.random()) * -2.5;
 	let dy = (Math.random()) * 2;
 	// Create variable for color
-	let color = "rgba(0,229,255,0.3)";
+	let color = "rgba(0,229,255,0.4)";
 
 
 	let fillText = "React";
