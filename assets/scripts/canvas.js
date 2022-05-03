@@ -27,13 +27,13 @@ class Circle {
 		this.draw = () => {
 			c.beginPath();
 			c.fillStyle = this.color;
-			c.strokeStyle = "rgba(43,45,65,0.9)";
+			c.strokeStyle = "#1E1E24";
 			c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
 			c.fill();
 			c.stroke();
 
 			c.font = "bold 20px Open Sans";
-			c.fillStyle = "rgba(43,45,65,0.9)";
+			c.fillStyle = "#1E1E24";
 			c.textBaseline = "middle";
 			c.textAlign ="center";
 			c.fillText(this.fillText, this.x, this.y);
@@ -56,6 +56,7 @@ class Circle {
 				this.dy = -this.dy;
 			}
 
+			// Add movement to circles
 			this.x += this.dx;
 			this.y += this.dy;
 
@@ -71,8 +72,8 @@ const htmlCss = () => {
 	// Create variable for radius
 	let radius = 120;
 	// Create variable outside of function for x-axis and y-axis
-	let x = 0.5 * (canvas.width + radius * 2) - radius;
-	let y = 0.5 * (canvas.height + 2 + radius * 2) - radius;
+	let x = 0.2 * (canvas.width + radius * 2) - radius;
+	let y = 0.35 * (canvas.height + 2 + radius * 2) - radius;
 	// Create variables for velocity
 	let dx = (Math.random()) * 2;
 	let dy = (Math.random()) * -1.5;
@@ -89,8 +90,8 @@ const js = () => {
 	// Create variable for radius
 	let radius = 100;
 	// Create variable outside of function for x-axis and y-axis
-	let x = 0.3 * (canvas.width + radius * 2) - radius;
-	let y = 0.6 * (canvas.height + 2 + radius * 2) - radius;
+	let x = 0.45 * (canvas.width + radius * 2) - radius;
+	let y = 0.3 * (canvas.height + 2 + radius * 2) - radius;
 	// Create variables for velocity
 	let dx = (Math.random()) * -1.5;
 	let dy = (Math.random()) * 2;
@@ -103,11 +104,29 @@ const js = () => {
 	circleArray.push(new Circle(x, y, dx, dy, radius, color, fillText));
 }
 
+const php = () => {
+	// Create variable for radius
+	let radius = 90;
+	// Create variable outside of function for x-axis and y-axis
+	let x = 0.7 * (canvas.width + radius * 2) - radius;
+	let y = 0.7 * (canvas.height + 2 + radius * 2) - radius;
+	// Create variables for velocity
+	let dx = (Math.random()) * 1.5;
+	let dy = (Math.random()) * -3.5;
+	// Create variable for color
+	let color = "rgba(115,119,173,0.4)";
+
+	let fillText = "PHP";
+
+	// Add all random circles to the array
+	circleArray.push(new Circle(x, y, dx, dy, radius, color, fillText));
+}
+
 const laravel = () => {
 	// Create variable for radius
-	let radius = 85;
+	let radius = 80;
 	// Create variable outside of function for x-axis and y-axis
-	let x = 0.6 * (canvas.width + radius * 2) - radius;
+	let x = 0.7 * (canvas.width + radius * 2) - radius;
 	let y = 0.3 * (canvas.height + 2 + radius * 2) - radius;
 	// Create variables for velocity
 	let dx = (Math.random()) * 2;
@@ -115,7 +134,7 @@ const laravel = () => {
 	// Create variable for color
 	let color = "rgba(195,29,29,0.4)";
 
-	let fillText = "PHP/Laravel";
+	let fillText = "Laravel";
 
 	// Add all random circles to the array
 	circleArray.push(new Circle(x, y, dx, dy, radius, color, fillText));
@@ -123,16 +142,15 @@ const laravel = () => {
 
 const react = () => {
 	// Create variable for radius
-	let radius = 85;
+	let radius = 80;
 	// Create variable outside of function for x-axis and y-axis
-	let x = 0.6 * (canvas.width + radius * 2) - radius;
-	let y = 0.6 * (canvas.height + 2 + radius * 2) - radius;
+	let x = 0.25 * (canvas.width + radius * 2) - radius;
+	let y = 0.7 * (canvas.height + 2 + radius * 2) - radius;
 	// Create variables for velocity
-	let dx = (Math.random()) * -2.5;
-	let dy = (Math.random()) * 2;
+	let dx = (Math.random()) * 2.5;
+	let dy = (Math.random()) * -2;
 	// Create variable for color
 	let color = "rgba(0,229,255,0.4)";
-
 
 	let fillText = "React";
 
@@ -142,6 +160,7 @@ const react = () => {
 
 htmlCss();
 js();
+php();
 laravel();
 react();
 
