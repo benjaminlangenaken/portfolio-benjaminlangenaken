@@ -467,12 +467,15 @@ footer {
 	width: 3rem;
 }
 
+.cv {
+	text-decoration: none;
+}
+
 .cv-text {
 	color: var(--light-color);
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
 	font-weight: 600;
-	text-decoration: none;
 	text-align: center;
 }
 
