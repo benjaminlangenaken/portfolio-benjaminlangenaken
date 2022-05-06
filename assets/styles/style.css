@@ -457,7 +457,7 @@ footer {
 }
 
 .footer-social {
-	width: 10rem;
+	width: 15rem;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -465,7 +465,15 @@ footer {
 
 .social-icons {
 	width: 3rem;
-	/*padding: 0 1rem;*/
+}
+
+p {
+	color: var(--light-color);
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	text-align: center;
 }
 
 @media only screen and (max-width: 1250px) {
