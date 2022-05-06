@@ -467,7 +467,7 @@ footer {
 	width: 3rem;
 }
 
-p {
+.cv-text {
 	color: var(--light-color);
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
