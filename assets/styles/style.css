@@ -5,6 +5,7 @@
 }
 
 * {
+	max-width: 100%;
 	margin: 0;
 	box-sizing: border-box;
 }
@@ -15,10 +16,11 @@ html {
 }
 
 body {
+	max-width: 100%;
+	overflow: auto;
 	background-color: #f1faee;
 	display: flex;
 	flex-direction: column;
-	overflow: auto;
 }
 
 ::-webkit-scrollbar {
@@ -266,13 +268,13 @@ hr {
 	align-items: center;
 	border: none;
 	border-radius: 25px;
-	box-shadow: var(--dark-color) 0 1px 3px;
+	box-shadow: var(#6c757d) 0 1px 3px;
 }
 
 .button-cv:hover {
 	background-color: var(--dark-color);
 	font-family: 'Open Sans', sans-serif;
-	box-shadow: var(--dark-color) 0 2px 5px;
+	box-shadow: var(#6c757d) 0 3px 6px;
 }
 
 .cv {
@@ -513,6 +515,11 @@ footer {
 }
 
 @media only screen and (max-width: 1250px) {
+
+	.content-wrap {
+		margin: 0 2rem;
+	}
+
 	.projects-container {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -648,6 +655,14 @@ footer {
 
 @media only screen and (max-width: 800px) {
 
+	*, body {
+		overflow-x: hidden;
+	}
+
+	.header-container {
+		width: 100%;
+	}
+
 	.hamburger-icon {
 		width: 4rem;
 		display: block;
@@ -668,7 +683,7 @@ footer {
 	}
 
 	.header-name {
-		width: 4rem;
+		width: 10rem;
 	}
 
 	nav {
