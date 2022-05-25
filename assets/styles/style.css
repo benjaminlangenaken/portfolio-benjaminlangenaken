@@ -527,6 +527,7 @@ footer {
 
 
 @media only screen and (max-width: 1000px) {
+
 	.hero {
 		flex-direction: column;
 	}
@@ -568,8 +569,8 @@ footer {
 		background-color: rgba(61, 64, 91, 0.55);
 		border-radius: 15px;
 		box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
-		margin-left: 0.5rem;
-		padding: 1rem;
+		margin: 1rem;
+		padding: 1.5rem;
 	}
 
 	.projects-container {
@@ -583,8 +584,13 @@ footer {
 
 @media only screen and (max-width: 800px) {
 
-	*, body {
+	html, body {
 		max-width: 100%;
+		overflow-x: hidden;
+	}
+
+	body {
+		position: relative;
 	}
 
 	.header-container {
@@ -654,6 +660,22 @@ footer {
 		color: #f2cc8f;
 		background-color: var(--dark-color);
 		box-shadow: none;
+	}
+
+	.hero-img {
+		width: 19rem;
+		height: 19rem;
+		border-radius: 15px 15px 0 0;
+	}
+
+	.bio {
+		width: 16rem;
+		font-size: 12px;
+		padding: 0.5rem;
+	}
+
+	.more-about p {
+		font-size: 10px;
 	}
 
 	.mail {
