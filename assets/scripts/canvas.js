@@ -106,7 +106,7 @@ const js = () => {
 
 const php = () => {
 	// Create variable for radius
-	let radius = 90;
+	let radius = 80;
 	// Create variable outside of function for x-axis and y-axis
 	let x = 0.7 * (canvas.width + radius * 2) - radius;
 	let y = 0.7 * (canvas.height + 2 + radius * 2) - radius;
@@ -124,7 +124,7 @@ const php = () => {
 
 const laravel = () => {
 	// Create variable for radius
-	let radius = 80;
+	let radius = 60;
 	// Create variable outside of function for x-axis and y-axis
 	let x = 0.7 * (canvas.width + radius * 2) - radius;
 	let y = 0.3 * (canvas.height + 2 + radius * 2) - radius;
@@ -142,7 +142,7 @@ const laravel = () => {
 
 const react = () => {
 	// Create variable for radius
-	let radius = 80;
+	let radius = 60;
 	// Create variable outside of function for x-axis and y-axis
 	let x = 0.25 * (canvas.width + radius * 2) - radius;
 	let y = 0.7 * (canvas.height + 2 + radius * 2) - radius;
