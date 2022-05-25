@@ -320,7 +320,7 @@ canvas {
 	box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
 }
 
-.circles {
+.chart {
 	display: none;
 }
 
@@ -554,94 +554,22 @@ footer {
 		margin: 0;
 	}
 
-	canvas {
+	#mySkills {
 		display: none;
 	}
 
-	.circles {
+	.chart {
+		width: 30rem;
+		height: 30rem;
 		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: space-evenly;
-		padding: 1.5rem;
+	}
+
+	#myChart {
 		background-color: rgba(61, 64, 91, 0.55);
 		border-radius: 15px;
 		box-shadow: rgba(61, 64, 91, 0.76) 0 2px 6px;
-	}
-
-	.html-css {
-		width: 12rem;
-		height: 12rem;
-		line-height: 12rem;
-		border-radius: 50%;
-		font-size: 20px;
-		font-weight: bold;
-		font-family: 'Open Sans', sans-serif;
-		color: var(--dark-color);
-		text-align: center;
-		background: rgba(50, 65, 230, 0.4);
-		border: 1px solid var(--dark-color);
-		margin: 1rem;
-	}
-
-	.js {
-		width: 10rem;
-		height: 10rem;
-		line-height: 10rem;
-		border-radius: 50%;
-		font-size: 20px;
-		font-weight: bold;
-		font-family: 'Open Sans', sans-serif;
-		color: var(--dark-color);
-		text-align: center;
-		background: rgba(209, 230, 50, 0.4);
-		border: 1px solid var(--dark-color);
-		margin: 1rem;
-	}
-
-	.php {
-		width: 9rem;
-		height: 9rem;
-		line-height: 9rem;
-		border-radius: 50%;
-		font-size: 20px;
-		font-weight: bold;
-		font-family: 'Open Sans', sans-serif;
-		color: var(--dark-color);
-		text-align: center;
-		background: rgba(50,65,230,0.4);
-		border: 1px solid var(--dark-color);
-		margin: 1rem;
-	}
-
-	.laravel {
-		width: 8rem;
-		height: 8rem;
-		line-height: 8rem;
-		border-radius: 50%;
-		font-size: 20px;
-		font-weight: bold;
-		font-family: 'Open Sans', sans-serif;
-		color: var(--dark-color);
-		text-align: center;
-		background: rgba(195, 29, 29, 0.4);
-		border: 1px solid var(--dark-color);
-		margin: 1rem;
-	}
-
-	.react {
-		width: 8rem;
-		height: 8rem;
-		line-height: 8rem;
-		border-radius: 50%;
-		font-size: 20px;
-		font-weight: bold;
-		font-family: 'Open Sans', sans-serif;
-		color: var(--dark-color);
-		text-align: center;
-		background: rgba(0, 229, 255, 0.4);
-		border: 1px solid var(--dark-color);
-		margin: 1rem;
+		margin-left: 0.5rem;
+		padding: 1rem;
 	}
 
 	.projects-container {
@@ -654,6 +582,10 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
+
+	*, body {
+		max-width: 100%;
+	}
 
 	.header-container {
 		width: 100%;

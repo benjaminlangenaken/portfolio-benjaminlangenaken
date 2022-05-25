@@ -21,6 +21,9 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon.ico">
 	<link rel="manifest" href="./assets/icons/site.webmanifest">
 
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+
+	<script src="assets/scripts/chart.js" defer></script>
 	<script src="assets/scripts/canvas.js" defer></script>
 </head>
 
@@ -110,14 +113,12 @@
 
 		<section id="skills">
 			<h2>My Skills</h2>
-			<canvas></canvas>
-			<div class="circles">
-				<div class="html-css">HTML/CSS</div>
-				<div class="js">JavaScript</div>
-				<div class="php">PHP</div>
-				<div class="laravel">Laravel</div>
-				<div class="react">React</div>
+			<canvas id="mySkills"></canvas>
+
+			<div class="chart">
+				<canvas id="myChart"></canvas>
 			</div>
+
 		</section>
 
 		<section id="projects">
@@ -179,7 +180,6 @@
 
 		<section id="contact">
 			<div class="contact-container">
-<!--				<form onsubmit="sendEmail(); reset(); return false;">-->
 				<form action="https://formsubmit.co/73e6ac2a554053d13ab9e3e9ce4c70b2" method="POST">
 					<h2 class="contact-title">Get in touch!</h2>
 					<input type="text" name="name" id="contact-name" placeholder="Your name?" required>
