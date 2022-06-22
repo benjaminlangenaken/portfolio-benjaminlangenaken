@@ -517,7 +517,7 @@ footer {
 @media only screen and (max-width: 1250px) {
 
 	.content-wrap {
-		margin: 0 2rem;
+		margin: 0 1rem;
 	}
 
 	.projects-container {
@@ -546,7 +546,7 @@ footer {
 	}
 
 	.more-about {
-		padding: 1rem 1.5rem;
+		padding: 1rem;
 	}
 
 	.more-about p {
@@ -598,7 +598,7 @@ footer {
 	}
 
 	.hamburger-icon {
-		width: 4rem;
+		width: 3.5rem;
 		display: block;
 		position: absolute;
 		top: 25px;
@@ -675,7 +675,7 @@ footer {
 	}
 
 	.chart {
-		width: 20rem;
+		width: 24rem;
 		height: 15rem;
 	}
 
@@ -745,8 +745,60 @@ footer {
 
 	@media only screen and (max-width: 500px) {
 
+		.page-container {
+			margin: 0
+		}
 		.more-about p {
 			font-size: 10px;
+			margin-bottom: 4rem;
+		}
+
+		.more-about p {
+			font-size: 10px;
+			margin-bottom: 0;
+		}
+
+
+
+		#skills h2 {
+			margin-bottom: 2rem;
+		}
+
+		#skills {
+			margin-bottom: 14rem;
+		}
+
+		.projects-title {
+			margin-bottom: 2rem;
+		}
+
+		#myChart,
+		#projects {
+			margin-bottom: 4rem;
+		}
+
+		#projects {
+			padding: 0;
+		}
+
+		.project-card {
+			width: 21rem;
+			padding: 1rem;
+		}
+
+		.project-pic {
+			margin-top: 0;
+		}
+
+		#contact {
+			width: 21rem;
+			margin-bottom: 2rem;
+		}
+
+		#contact-name,
+		#contact-email,
+		#contact-message {
+			width: 18rem;
 		}
 	}
 }
