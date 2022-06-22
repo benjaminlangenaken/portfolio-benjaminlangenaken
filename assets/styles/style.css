@@ -674,8 +674,38 @@ footer {
 		padding: 0.5rem;
 	}
 
-	.more-about p {
-		font-size: 10px;
+	.chart {
+		width: 20rem;
+		height: 15rem;
+	}
+
+	.project-card {
+		width: 18rem;
+		margin: 1rem;
+	}
+
+	#contact{
+		width: 18rem;
+		margin-bottom: 4rem;
+	}
+
+	form {
+		align-items: center;
+	}
+
+	.contact-title {
+		margin-bottom: 2rem;
+	}
+
+	#contact-name,
+	#contact-email,
+	#contact-message {
+		width: 10rem;
+		margin: 1rem;
+	}
+
+	.contact-button {
+		margin-top: 2rem;
 	}
 
 	.mail {
@@ -711,5 +741,12 @@ footer {
 
 	.footer-span {
 		font-size: 16px;
+	}
+
+	@media only screen and (max-width: 500px) {
+
+		.more-about p {
+			font-size: 10px;
+		}
 	}
 }
