@@ -1,7 +1,7 @@
 # My Portfolio
 
 Hi there! <br>
-Thanks for taking the time to check out my portfolio website.
+Thanks for taking the time to check out [my portfolio website](https://portfolio-benjamin-langenaken.netlify.app/).
 
 Feel like having a digital cup of coffee? ☕ <br>
 Get in touch, and we'll have a talk!
